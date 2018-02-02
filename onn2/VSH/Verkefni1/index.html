@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="utf-8">
+	<title>meme bean</title>
+</head>
+<body>
+	<form action="/login" method="post" class="panta">
+		<label>Nafn</label>
+		<input type="text" name="name" required="name">
+		<label>Tölvupóstur</label>
+		<input type="email" name="email" required="email">
+		<label>Dagsetning</label>
+		<input type="date" name="date" required="date">
+		
+    	<section>
+    	<label>
+    	Spitfire
+    	<input type="radio" name="flugvel" value="Spitfire">
+    	</label>
+    	<label>
+    	Kalinin K-7
+    	<input type="radio" name="flugvel" value="Russian flying fortress">
+    	</label>
+    	</section>
+    	<section>
+    	<input type="checkbox" name="litir" >Grænn 
+    	<input type="checkbox" name="litir" >Rauður
+    	<input type="checkbox" name="litir" >Gulur
+    	<input type="checkbox" name="litir" >Blár
+    	</section>
+    	<section>
+    	Einhverjar spurningar?
+    	<textarea name="spurning" placeholder="Sláðu inn athugasemd " required=""></textarea>
+    	</section>
+    	<fieldset class="hnappur">
+    	<input class="btn" type="submit" name="submit" value="Panta">
+    	</fieldset>
+    </form>
+	<h1 class="title">BUY YOUR RUSSIAN FLYING FORTRESS TODAY</h1>
+	<img class="russian" src="russian.jpg">
+	<img class="british" src="spitfire.jpg">
+	<div>
+      <table>
+        <caption><strong>Flugvélar</strong></caption>
+        <thead>
+          <tr>
+            <th scope="col">Tegund af flugvél</th>
+            <th scope="col">Staða</th>
+            <th scope="col">Staður</th>
+            <th scope="col">Verð</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kalinin K-7</td>
+            <td>Í topp formi</td>
+            <td>Reykjavíkur flugvöllur</td>
+            <td>269950000 kr</td>
+          </tr>
+          <tr>
+          	<td>Spitfire</td>
+        	<td>Í topp fromi</td>
+        	<td>Royal Air Force Museum</td>
+        	<td>186650000 kr</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        	<td>Viðgerð</td>
+        	<td>6 mánuðir</td>
+        	<td>Reykjavíkur flugvöllur</td>
+        	<td>1000000 kr</td>
+          
+        </tfoot>
+      </table>
+    </div>
+    	
+
+  </fieldset>
+
+
+	</form>
+
+
+</body>
+</html>

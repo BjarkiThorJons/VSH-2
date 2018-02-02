@@ -1,0 +1,193 @@
+body
+{	
+	max-width: 48em;
+	margin: 0 auto;
+}
+
+header
+{
+	display: flex;
+	background-color: #98EE31;
+	height: 60px;
+	font-size: 30px;
+	padding-top: 20px;
+	margin-top: -16px;
+}
+
+.kassi
+{
+	display: block;
+}
+
+.middle
+{
+	background-color: skyblue;
+	text-align: left;
+	width: 748px;
+	padding: 10px;
+}
+.aside1
+{
+	float: left;
+	width: 364px;
+	background-color: yellow; 
+	padding: 10px;
+}
+.aside2
+ {
+ 	float: right;
+	width: 364px;
+ 	background-color: brown;
+ 	padding: 10px;
+ }
+ .box
+ {
+ 	display: flex;
+ 	background-color: purple;
+ 	width: 100%;
+	height: 60px;
+	padding-top: 20px;
+ }
+ .kassi2
+ {
+ 	display: flex;
+ 	flex-flow: column;
+ 	justify-content: center;
+ 	position: fixed;
+ 	left: 0px;
+ 	top: 100px;
+ }
+.a
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: green;
+	text-align: center;
+	color: #FFF;
+}
+.b
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: blue;
+	text-align: center;
+	color: #FFF;
+}
+.c
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: orange;
+	text-align: center;
+	color: #FFF;
+}
+.d
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: red;
+	text-align: center;
+	color: #FFF;
+}
+label{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	border: 3px outset #999;
+	color: #fff;
+	cursor: pointer;+
+	font-size: 1.5em;
+	text-align: center;
+	padding: .2em  .4em;
+	background-color: #069;
+	transition: all .4s ease;
+}
+input{
+	display: none;
+}
+input:checked + lable{
+	box-shadow: inset 0 .2em .2em rgba(0, 0, 0.25);
+	border: 2px inset #999;
+	color: #fff; 
+}
+input:checked ~ .topmenu{
+	position: fixed;
+	bottom: 2.4em;
+	left: 0;
+	z-index: 990;
+	transition: all 1s ease;
+}
+.topmenu{
+	display: block;
+	position: fixed;
+	bottom: -15em;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	transition: all 1s ease;
+}
+.topmenu li{
+	border 0;
+	border-bottom: 1px solid lime;
+	padding: 0;
+	margin: 0;
+}
+.topmenu a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: .4em 2em;
+	background-color: #096
+}
+.topmenu a:hover,
+.topmenu a:active,
+.topmenu a:focus{
+	background-color: lime;
+	transition: all 1s ease;
+}
+nav{
+	max-height: 5em;
+	overflow: hidden;
+	transition: all 1s ease;
+}
+.sMedia{
+	display: flex;
+	flex-flow: row;
+	position: relative;
+}
+.sMedia div{
+	margin: 0;
+	padding: 1em 0 0 0;
+}
+.sMedia a{
+	width: 3em;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 1em; 
+}
+.sMedia a:nth-child(4n+1){
+	position: relative;
+	height: 3em;
+	width: 3em;
+	background: rgb(22, 145, 190);
+	transition: all 1s ease;
+}
+.sMedia a:nth-child(4n+2){
+	position: relative;
+	height: 3em;
+	width: 3em;
+	background: rgb(22, 107, 162);
+	transition: all 1s ease;
+}

@@ -1,0 +1,204 @@
+
+$minnlitur:red;
+$color:green;
+h1{
+    color: lighten($color,20%)
+}
+@mixin ad($font-size,$color){
+        font-size: $font-size;
+        color: $color;
+}
+
+body
+{	
+	max-width: 60em;
+	margin: 0 auto;
+}
+article{
+    @include ad(20px,purple);
+}
+header
+{
+	display: flex;
+	background-color: $minnlitur;
+	height: 60px;
+	font-size: 30px;
+	padding-top: 20px;
+	margin-top: -16px;
+}
+
+.topmenu
+{
+	display: flex;
+	justify-content: center;
+	background-color: #ED5026;
+	width: 95.8%;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+	list-style-type: none;
+}
+.kassi
+{
+	display: flex;
+	flex: 1 100%;
+}
+
+.middle
+{
+    
+	background-color: skyblue;
+	order: 2;
+	text-align: left;
+	padding: 10px;
+}
+.aside1
+{
+	background-color: yellow; 
+	order: 1;
+	padding: 10px;
+}
+.aside2
+ {
+ 	background-color: brown;
+ 	order: 3;
+ 	padding: 10px;
+ }
+ .box
+ {
+ 	display: flex;
+ 	background-color: purple;
+ 	width: 100%;
+	height: 60px;
+	padding-top: 20px;
+ }
+ .kassi2
+ {
+ 	display: flex;
+ 	flex-flow: column;
+ 	justify-content: center;
+ 	position: fixed;
+ 	left: 0px;
+ 	top: 100px;
+ }
+.a
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: green;
+	text-align: center;
+	color: #FFF;
+}
+.b
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: blue;
+	text-align: center;
+	color: #FFF;
+}
+.c
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: orange;
+	text-align: center;
+	color: #FFF;
+}
+.d
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: red;
+	text-align: center;
+	color: #FFF;
+}
+@media (min-width: 37.5em)
+{
+	body
+	{	
+	max-width: 60em;
+	margin: 0 auto;
+	}
+
+
+	.kassi{
+		display: flex;
+		flex: 1 100%;
+		flex-flow: row;
+	}
+	.middle
+	{
+	background-color: skyblue;
+	order: 2;
+	text-align: left;
+	padding: 10px;
+	}
+	.aside1
+	{
+	background-color: yellow; 
+	order: 1;
+	padding: 10px;
+	}
+	.aside2
+ 	{
+ 	background-color: brown;
+ 	order: 3;
+ 	padding: 10px;
+ 	}
+ 	.myndir
+	{
+	display: flex;
+	margin: auto;
+	max-width: none;
+	}
+
+}
+@media (max-width: 30em)
+{
+	body
+	{	
+	max-width: 60em;
+	margin: 0 auto;
+	}
+
+
+	.kassi
+{
+	display: flex;
+	flex: 1 100%;
+	flex-flow: column;
+}
+
+.middle
+{
+	background-color: skyblue;
+	order: 1;
+	text-align: left;
+	padding: 10px;
+}
+.aside1
+{
+	background-color: yellow; 
+	order: 2;
+	padding: 10px;
+}
+.aside2
+ {
+ 	background-color: brown;
+ 	order: 3;
+ 	padding: 10px;
+ }
+ 	.myndir
+	{
+	display: flex;
+	margin: auto;
+	flex-flow: column;
+	width: 160px;
+	}
+
+}

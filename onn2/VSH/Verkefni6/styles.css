@@ -1,0 +1,187 @@
+body
+{	
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+header
+{
+	display: flex;
+	background-color: #98EE31;
+	height: 200px;
+	font-size: 30px;
+	padding-top: 20px;
+	margin-top: -16px;
+}
+
+}
+.kassi
+{
+	display: flex;
+	flex: 1 100%;
+	flex-flow: column;
+}
+
+.middle
+{
+	background-color: skyblue;
+	order: 1;
+	text-align: left;
+	padding: 10px;
+
+}
+.aside1
+{
+	background-color: yellow; 
+	order: 2;
+	padding: 10px;
+}
+.aside2
+ {
+ 	background-color: brown;
+ 	order: 3;
+ 	padding: 10px;
+ }
+ .box
+ {
+ 	display: flex;
+ 	background-color: purple;
+ 	width: 100%;
+	height: 60px;
+	padding-top: 20px;
+ }
+ .kassi2
+ {
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-flow: column;
+ 	position: fixed;
+ 	left: 0;
+ 	top: 100px;
+ }
+.a
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: green;
+	text-align: center;
+	color: #FFF;
+}
+.b
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: blue;
+	text-align: center;
+	color: #FFF;
+}
+.c
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: orange;
+	text-align: center;
+	color: #FFF;
+}
+.d
+{
+	height: 1em;
+	width: 1em;
+	padding: 1em;
+	background-color: red;
+	text-align: center;
+	color: #FFF;
+}
+
+}
+nav{
+	max-height: 5em;
+	overflow: hidden;
+	transition: all 1s ease;
+}
+.sMedia{
+	display: flex;
+	flex-flow: row;
+	position: relative;
+}
+.sMedia div{
+	margin: 0;
+	padding: 1em 0 0 0;
+}
+.sMedia a{
+	width: 3em;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 1em; 
+}
+.sMedia a:nth-child(4n+1){
+	position: relative;
+	height: 3em;
+	width: 3em;
+	background: rgb(22, 145, 190);
+	transition: all 1s ease;
+}
+.sMedia a:nth-child(4n+2){
+	position: relative;
+	height: 3em;
+	width: 3em;
+	background: rgb(22, 107, 162);
+	transition: all 1s ease;
+}
+@media (min-width: 760px)
+{
+	body
+	{	
+	max-width: 60em;
+	margin: 0 auto;
+	}
+
+
+	.kassi{
+		display: flex;
+		flex: 1 100%;
+		flex-flow: row;
+	}
+	.middle
+	{
+	background-color: skyblue;
+	order: 2;
+	text-align: left;
+	padding: 10px;
+	}
+	.aside1
+	{
+	background-color: yellow; 
+	order: 1;
+	padding: 10px;
+	}
+	.aside2
+ 	{
+ 	background-color: brown;
+ 	order: 3;
+ 	padding: 10px;
+ 	}
+ 	.kassi2
+ 	{
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-flow: column;
+ 	position: fixed;
+ 	}
+ 	header
+	{
+	display: flex;
+	background-color: #98EE31;
+	height: 100px;
+	font-size: 30px;
+	padding-top: 20px;
+	margin-top: -16px;
+	}
+
+}

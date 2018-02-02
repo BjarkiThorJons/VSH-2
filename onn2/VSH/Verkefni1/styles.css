@@ -1,0 +1,45 @@
+body
+{
+	background: linear-gradient(to bottom,#fff,#000);
+	color: blue;
+	height: 58em;
+}
+.panta
+{
+	float: right;
+	margin: auto;
+	width: 200px;
+	border: 1px solid ;
+	border-radius: 20px;
+	padding: 20px;
+
+
+}
+.hnappur
+{
+	padding: 5px;
+	border-radius: 10px;
+
+}
+input
+{
+	border-radius: 5px;
+}
+.russian
+{
+	width: 640px;
+	height: 360px;
+}
+.title
+{
+	text-align: middle
+}
+.british
+{
+	width: 640px;
+	height: 360px;
+}
+th,
+td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
